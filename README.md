@@ -1,35 +1,30 @@
 # shodh-ai-loan
 
-# Lending Club Loan Approval: DL & Offline RL Project
+## Lending Club Loan Approval: Deep Learning & Offline Reinforcement Learning Project
 
-This repository contains all code, data processing steps, and models for predicting loan defaults and learning optimal loan approval policies using both Deep Learning (DL) and Offline Reinforcement Learning (RL).
-
----
-
-## Project Overview
-
-The goal of this project is to:
-
-1. Predict loan defaults using a supervised Deep Learning model.
-2. Learn an optimal loan approval policy using an offline RL agent (CQL).
-3. Compare the performance of DL and RL policies in terms of financial returns and risk.
+This repository provides the complete codebase, data preprocessing workflows, and model implementations for predicting loan defaults and designing optimal loan approval strategies using Deep Learning (DL) and Offline Reinforcement Learning (RL).
 
 ---
 
-## Folder Structure
+## Project Summary
 
-Project Insights
+This project aims to:
+1. Forecast the likelihood of loan defaults through supervised deep learning models.
+2. Develop an offline RL agent (CQL) to discover optimal loan approval strategies.
+3. Assess how DL and RL policy approaches differ by comparing financial returns and associated risks.
 
-DL Model: Evaluates prediction accuracy for defaults (AUC/F1-score).
+---
 
-RL Model: Optimizes expected financial returns (Estimated Policy Value).
+## Repository Structure & Insights
 
-Policy Differences: RL may approve borderline high-risk loans if expected reward outweighs potential loss.
+- **DL Model:** Focuses on prediction accuracy for identifying defaults (reports both AUC and F1-score).
+- **RL Model:** Maximizes projected financial gains (evaluates policy value).
+- **Policy Comparison:** RL agents may approve loans with higher risk if anticipated rewards justify potential losses.
 
-Limitations & Future Work
+---
 
-One-step episode assumption for RL ignores long-term repayment behavior.
+## Limitations & Future Directions
 
-Limited features may miss borrower behavior signals.
-
-Future work: hybrid RL+DL models, more offline RL algorithms (SAC, IQL), threshold tuning for DL, additional features.
+- The current RL setup uses a one-step episode framework, which does not account for extended repayment behaviors.
+- Feature set may be insufficient to capture all borrower behavior nuances.
+- Future enhancements can include hybrid RL+DL models, additional offline RL algorithms (e.g., SAC, IQL), threshold calibration for DL models, and expanding feature space.
